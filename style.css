@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+
+body.night {
+    background-color: #202020;
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table.change,
+table.change th,
+table.change td {
+    border: 1px solid white;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: #404040;
+    color: white;
+}
+
+table.change th {
+    background-color: midnightblue;
+}
+
+td {
+    background-color: white;
+    color: #404040;
+}
+
+table.change td {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: center;
+}
+
+form {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+form fieldset {
+    padding: 20px;
+}
+
+form .input-wrap {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    width: 100%;
+    gap: 0 10px;
+}
+
+form input {
+    font-family: inherit;
+    padding: 10px;
+    color: inherit;
+}
+
+body.night input {
+    background-color: #808080;
+    border: none;
+}
+
+form fieldset legend {
+    padding: 10px;
+    font-size: 18px;
+}
+
+form .add-btn {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.change-style {
+    padding: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Data</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <table id="movies"></table>
+
+    <button class="change-style">Night Mode</button>
+
+    <form id="add-movie" action="#">
+        <fieldset>
+            <legend>Add New Movie</legend>
+
+            <div class="input-wrap">
+                <label for="movie-name">Movie Name</label>
+                <input type="text" name="movie-name" id="movie-name" required>
+            </div>
+
+            <div class="input-wrap">
+                <label for="plot">Genre</label>
+                <input type="text" name="plot" id="plot" required>
+            </div>
+
+            <div class="input-wrap">
+                <label for="cast">Cast (comma seperated)</label>
+                <input type="text" name="cast" id="cast" required>
+            </div>
+
+            <div class="input-wrap">
+                <label for="runtime">Runtime</label>
+                <input type="number" name="runtime" id="runtime" required>
+            </div>
+
+            <div class="input-wrap">
+                <label for="rating">Rating</label>
+                <input type="number" name="rating" id="rating" min="0" step="0.1" required>
+            </div>
+
+            <div class="input-wrap">
+                <label for="year">Year</label>
+                <input type="number" name="year" id="year" min="1900" required>
+            </div>
+
+            <input class="add-btn" type="submit" value="Add">
+        </fieldset>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
